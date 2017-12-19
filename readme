@@ -1,0 +1,9 @@
+This a clNC patch from psyBNC ver 2.3.3
+How to run?
+tar -zxvf cla.tar.gz
+cd .cla
+./conf <ident> <port>
+.cla
+./start
+Thanks 4 using...
+g0eZ

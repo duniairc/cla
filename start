@@ -1,0 +1,2 @@
+#!/bin/sh
+./camelia "psy@camelia.running -OK" claa psy

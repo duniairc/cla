@@ -1,0 +1,10 @@
+#!/bin/sh
+if test -r /home/goez/.cla/psybnc.pid; then
+pid=$(cat /home/goez/.cla/psybnc.pid)
+if $(kill -CHLD $pid >/dev/null 2>&1)
+then
+exit 0
+fi
+fi
+cd /home/goez/.cla
+./start &>/dev/null

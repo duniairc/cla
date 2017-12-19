@@ -1,0 +1,13 @@
+#!/bin/sh
+echo "==========================="
+echo "psyBNC aConfig by CameLiA"
+echo "---------------------------"
+echo "Use ./conf <admin> <port>"
+echo "PSYBNC.SYSTEM.PORT1=$2" > psy
+echo "PSYBNC.SYSTEM.HOST1=*" >> psy
+echo "PSYBNC.HOSTALLOWS.ENTRY0=*;*" >> psy
+echo "USER0.USER.LOGIN=$1" >> psy
+echo "USER0.USER.PASS=*" >> psy
+echo "USER0.USER.RIGHTS=1" >> psy
+echo "==========================="
+cat psy

@@ -1,0 +1,6 @@
+tools/chkssl.c:48:28: error: openssl/crypto.h: No such file or directory
+tools/chkssl.c:49:26: error: openssl/x509.h: No such file or directory
+tools/chkssl.c:50:25: error: openssl/pem.h: No such file or directory
+tools/chkssl.c:51:25: error: openssl/ssl.h: No such file or directory
+tools/chkssl.c:52:25: error: openssl/err.h: No such file or directory
+tools/chkssl.c:53:26: error: openssl/rand.h: No such file or directory

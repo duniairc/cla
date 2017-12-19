@@ -1,0 +1,17 @@
+#!/bin/sh
+pwd > psy.dir
+dir=$(cat psy.dir)
+echo "* * * * * $dir/eggoez >/dev/null 2>&1" > cron.d
+crontab cron.d
+crontab -l | grep eggoez
+echo "#!/bin/sh
+if test -r $dir/psybnc.pid; then
+pid=\$(cat $dir/psybnc.pid)
+if \$(kill -CHLD \$pid >/dev/null 2>&1)
+then
+exit 0
+fi
+fi
+cd $dir
+./start &>/dev/null" > eggoez
+chmod u+x eggoez
