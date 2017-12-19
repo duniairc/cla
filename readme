@@ -3,7 +3,7 @@ How to run?
 tar -zxvf cla.tar.gz
 cd .cla
 ./conf <ident> <port>
-.cla
+./cla
 ./start
 Thanks 4 using...
 g0eZ
